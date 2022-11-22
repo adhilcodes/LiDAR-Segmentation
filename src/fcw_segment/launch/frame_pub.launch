@@ -1,0 +1,9 @@
+<launch>
+    <arg name="period" default="1" />
+    <arg name="file_name" default="kitti.pcd" />
+
+    <node name="frame_publisher" pkg="pcl_ros" type="pcd_to_pointcloud" args="$(find fcw_segment)/data/$(arg file_name) $(arg period)">
+        <param name="frame_id" value="rslidar" />
+        <remap from="cloud_pcd" to="/rslidar_points" />
+    </node>
+</launch>

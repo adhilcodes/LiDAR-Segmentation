@@ -1,0 +1,9 @@
+<launch>
+    <arg name="source_topic" default="/rslidar_points" />
+
+    <node name="pointcloud_filter" pkg="fcw_segment" type="filter.py" >
+        <remap from="/rslidar_points" to="$(arg source_topic)" />
+    </node>
+    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fcw_segment)/rviz/rviz.rviz"/>
+</launch>

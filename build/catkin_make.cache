@@ -1,0 +1,2 @@
+fcw_segment
+-DCATKIN_DEVEL_PREFIX=/home/adhil/Desktop/pcd_ws/devel -DCMAKE_INSTALL_PREFIX=/home/adhil/Desktop/pcd_ws/install -G Unix Makefiles
