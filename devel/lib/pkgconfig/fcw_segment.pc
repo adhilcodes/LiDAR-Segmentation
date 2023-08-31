@@ -1,8 +1,0 @@
-prefix=/home/adhil/Desktop/pcd_ws/devel
-
-Name: fcw_segment
-Description: Description of fcw_segment
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
